@@ -48,33 +48,22 @@ yolov5 weights (pre-train)
 ".\data\multispectral"
 可通过whereimages.py文件设置存放图片路径的txt文档，即train.txt val.txt和test.txt
 数据集具体存放位置如下（以M3FD为例）：
--M3FD
-	-visible
-		-train
-			-labels
-			-images
-		-val
-			-labels
-			-images
-		-test
-			-labels
-			-images
-		train.txt
-		val.txt
-		test.txt
-	-infrared
-		-train
-			-labels
-			-images
-		-val
-			-labels
-			-images
-		-test
-			-labels
-			-images
-		train.txt
-		val.txt
-		test.txt
+- **visible/**: 包含可见光数据集的训练、验证和测试数据。
+  - **train/**: 训练数据的文件夹，包含标签和图像。
+  - **val/**: 验证数据的文件夹，包含标签和图像。
+  - **test/**: 测试数据的文件夹，包含标签和图像。
+  - **train.txt**: 列出训练数据文件名的文本文件。
+  - **val.txt**: 列出验证数据文件名的文本文件。
+  - **test.txt**: 列出测试数据文件名的文本文件。
+
+- **infrared/**: 包含红外数据集的训练、验证和测试数据。
+  - **train/**: 训练数据的文件夹，包含标签和图像。
+  - **val/**: 验证数据的文件夹，包含标签和图像。
+  - **test/**: 测试数据的文件夹，包含标签和图像。
+  - **train.txt**: 列出训练数据文件名的文本文件。
+  - **val.txt**: 列出验证数据文件名的文本文件。
+  - **test.txt**: 列出测试数据文件名的文本文件。
+
 
 
 执行指令：``` python train.py```
